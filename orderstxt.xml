@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+   New Perspectives on XML
+   Tutorial 2
+   Tutorial Case
+
+   Map Finds For You report
+   Author:   Nikita Baiborodov
+   Date:     9/06/2025
+
+   Filename:         orders.xml
+-->
+<!DOCTYPE customers
+[
+        <!ELEMENT customers (customer+)>
+        <!ELEMENT customer (name, address, phone, email?, orders)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT phone (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT orders (order+)>
+        <!ELEMENT order (orderDate, items)>
+        <!ELEMENT orderDate (#PCDATA)>
+        <!ELEMENT items (item+)>
+        <!ELEMENT item (itemPrice, itemQty)>
+        <!ELEMENT itemPrice (#PCDATA)>
+        <!ELEMENT itemQty (#PCDATA)>
+]>
+
+<customers>
+   <customer custID="cust201">
+      <name title="Mr.">John Michael</name>
+      <address>
+         <![CDATA[
+         41 West Plankton Avenue
+         Orlando, FL  32820
+         ]]>
+      </address>
+      <phone>(407) 555-3476</phone>
+      <email>jk@example.net</email>
+      <orders>
+         <order orderID="or1089" orderBy="cust201">
+            <orderDate>8/11/2017</orderDate>
+            <items>
+               <item itemNumber="WM100PL">
+                  <itemPrice saleItem="N">39.95</itemPrice>
+                  <itemQty>1</itemQty>
+               </item> 
+               <item itemNumber="WM101P">
+                  <itemPrice saleItem="Y">19.90</itemPrice>
+                  <itemQty>2</itemQty>
+               </item> 
+            </items>
+         </order>
+      </orders>
+   </customer>
+   	
+   <customer custID="cust202">
+      <name title="Mr.">Dean Abernath</name>
+      <address>
+         <![CDATA[
+         200 Bear Avenue
+         Front Royal, VA 22630
+         ]]>
+      </address>
+      <phone>(540) 555-1788</phone>
+      <email>dabernath@example.net</email>
+      <orders>
+         <order orderID="or1021" orderBy="cust202">
+            <orderDate>8/1/2017</orderDate>
+            <items>
+               <item itemNumber="WM100PL">
+                  <itemPrice>29.95</itemPrice>
+                  <itemQty>1</itemQty>
+               </item>
+               <item itemNumber="WM105L">
+                  <itemPrice>19.95</itemPrice>
+                  <itemQty>1</itemQty>
+               </item> 
+            </items>
+         </order>
+         <order orderID="or1122" orderBy="cust202">
+            <orderDate>10/1/2017</orderDate>
+            <items>
+               <item itemNumber="H115E">
+                  <itemPrice saleItem="Y">24.90</itemPrice>
+                  <itemQty>2</itemQty>
+               </item>
+               <item itemNumber="H115F">
+                  <itemPrice saleItem="N">14.95</itemPrice>
+                  <itemQty>1</itemQty>
+               </item> 
+            </items>
+         </order>
+      </orders>
+   </customer>
+
+   <customer custID="cust203">
+      <name>Riverfront High School</name>
+      <address>
+         <![CDATA[
+         1950 West Magnolia Drive
+         River Falls, WI 54022
+         ]]>
+      </address>
+      <phone>(715) 555-4022</phone>
+      <orders>
+         <order orderID="or1120" orderBy="cust203">
+            <orderDate>9/15/2017</orderDate>
+            <items>
+               <item itemNumber="WM140P">
+                  <itemPrice>78.90</itemPrice>
+                  <itemQty>2</itemQty>
+               </item> 
+            </items>
+         </order>
+      </orders>
+   </customer>
+</customers>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+   New Perspectives on XML
+   Tutorial 2
+   Review Assignments
+
+   List of maps sold by Map Finds For You
+   Author:   Nikita Baiborodov
+   Date:     9/06/2025
+
+   Filename:         products.xml
+-->
+
+<products>
+   <product>
+      <name pid="HM1002P" category="historical">North America 1849</name>
+      <versionDate surveyDate="1849">1968</versionDate>     
+      <desc>This historical map of North America includes part of the West India Islands. 
+      Old style colors are used to outline boundaries of the United States. 30 x 38 inches. 
+      </desc>
+      <price media="electronic">$38.00</price>
+   </product>
+   <product>
+      <name pid="HM3042P" category="historical">Lewis and Clark: A Legacy of Science</name>
+      <versionDate>2003</versionDate>
+      <desc>This Lewis and Clark poster commemorating the bicentennial of this incredible 
+      journey of discovery features two maps in parallel view: above is a beautiful reproduction 
+      of the 1814 Lewis and Clark map; also included is the same geographic area depicted with 
+      current remote sensing technology in a colorful image of the American landscape. 42 x 44.5 inches.
+      </desc>
+      <isbn>978-0-607-99721-7</isbn>
+      <price format="flat" media="paper">$5.50</price>
+   </product>
+   <product>
+      <name pid="SM012P" category="state">United States: Wisconsin</name>
+      <versionDate>1968</versionDate>
+      <desc>This state map of Wisconsin outlines borders of the state and its counties.  Some
+      topography is included.  46 x 45 inches.
+      </desc>
+      <isbn>978-0-607-59264-1</isbn>
+      <price format="flat" media="paper">$1.00</price>
+   </product>
+   <product>
+      <name pid="PL24L" category="parks">Canyonlands National Park</name>
+      <versionDate></versionDate>
+      <desc>National park map of Canyonlands National Park, which is the the largest national 
+      park in Utah.  Some shaded relief; contours included. 45 x 60 inches.
+      </desc>
+      <isbn>978-0-607-84777-2</isbn>
+      <price format="flat" media="paper">$12.00</price>
+   </product>
+   <product>
+      <name pid="HM240P" category="historical">Antietam: Historical Map of the Battlefield of Antietam</name>
+      <versionDate>1904</versionDate>
+      <desc>The National Geospatial-Intelligence Agency (NGA) created these attractive and 
+      informative posters to celebrate the legacy of battlefield cartography, photo interpretation, 
+      and imagery analysis. This is one of a series of 14 maps based on surveys of the Antietam 
+      Battlefield showing military positions during the course of the battle. These maps were 
+      created in response to a congressional mandate to document significant Civil War 
+      battlefields. The purpose was to gain a greater understanding of the movement of troop, 
+      artillery, and cavalry units as they maneuvered to win an advantage. 36 x 24 inches.
+      </desc>
+      <price format="flat" media="paper">$12.00</price>
+   </product>
+   <product>
+      <name pid="HM250P" category="historical">Normandy Air Campaign</name>
+      <versionDate>1945</versionDate>
+      <desc>The National Geospatial-Intelligence Agency (NGA) created these attractive and 
+      informative posters to celebrate the legacy of battlefield cartography, photo interpretation, 
+      and imagery analysis. This map shows fighter plane patrol routes in assault areas. The map 
+      legend identifies flight routes across the English Channel, positions of naval ships, 
+      assault beaches, and more. Foreground image is of P47s flying in patrol formation during 
+      the invasion. 36.5 x 24.5 inches.
+      </desc>
+      <price format="flat" media="paper">$10.00</price>
+   </product>
+</products>
