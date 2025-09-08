@@ -14,16 +14,29 @@
 [
         <!ELEMENT customers (customer+)>
         <!ELEMENT customer (name, address, phone, email?, orders)>
+        <!ATTLIST customer custID ID #REQUIRED>
+
         <!ELEMENT name (#PCDATA)>
+        <!ATTLIST name title (Mr. | Mrs. | Ms.) #IMPLIED>
+
         <!ELEMENT address (#PCDATA)>
         <!ELEMENT phone (#PCDATA)>
         <!ELEMENT email (#PCDATA)>
         <!ELEMENT orders (order+)>
+
         <!ELEMENT order (orderDate, items)>
+        <!ATTLIST order orderID ID #REQUIRED>
+        <!ATTLIST order orderBy IDREF #REQUIRED>
+
         <!ELEMENT orderDate (#PCDATA)>
         <!ELEMENT items (item+)>
+
         <!ELEMENT item (itemPrice, itemQty)>
+        <!ATTLIST item itemNumber CDATA #REQUIRED>
+
         <!ELEMENT itemPrice (#PCDATA)>
+        <!ATTLIST itemPrice saleItem (Y | N) "N">
+
         <!ELEMENT itemQty (#PCDATA)>
 ]>
 
